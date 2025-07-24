@@ -1,5 +1,8 @@
 # 🚀 Hina Atif - DevOps Portfolio Deployment
 
+![CI/CD](https://github.com/Hina-Atif/devops-portfolio-deployment/actions/workflows/deploy.yml/badge.svg)
+
+
 Welcome to the professional DevOps Portfolio Website of **Hina Atif**.  
 This project showcases automation, CI/CD, cloud hosting, and best practices using **AWS + GitHub Actions**.
 
@@ -8,8 +11,6 @@ This project showcases automation, CI/CD, cloud hosting, and best practices usin
 ## 👩‍💻 About Me
 
 Hi, I'm **Hina Atif**, an aspiring DevOps & Cloud Engineer with hands-on skills in:
-
-![CI/CD](https://github.com/Hina-Atif/devops-portfolio-deployment/actions/workflows/deploy.yml/badge.svg)
 
 
 - 🚀 AWS S3, EC2, IAM
