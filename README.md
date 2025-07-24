@@ -2,7 +2,6 @@
 
 ![CI/CD](https://github.com/Hina-Atif/devops-portfolio-deployment/actions/workflows/deploy.yml/badge.svg)
 
-
 Welcome to the professional DevOps Portfolio Website of **Hina Atif**.  
 This project showcases automation, CI/CD, cloud hosting, and best practices using **AWS + GitHub Actions**.
 
