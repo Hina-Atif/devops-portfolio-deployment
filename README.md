@@ -9,6 +9,9 @@ This project showcases automation, CI/CD, cloud hosting, and best practices usin
 
 Hi, I'm **Hina Atif**, an aspiring DevOps & Cloud Engineer with hands-on skills in:
 
+![CI/CD](https://github.com/Hina-Atif/devops-portfolio-deployment/actions/workflows/deploy.yml/badge.svg)
+
+
 - 🚀 AWS S3, EC2, IAM
 - 🔄 CI/CD with GitHub Actions
 - 🐳 Docker & Linux
