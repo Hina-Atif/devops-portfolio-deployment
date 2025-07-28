@@ -1,58 +1,110 @@
-# 📊 Monitoring Infrastructure with Prometheus & Grafana
+# Monitoring Infrastructure with Prometheus & Grafana
 
-This project demonstrates how to set up a containerized monitoring stack using **Prometheus**, **Grafana**, and **Node Exporter** to monitor system-level metrics in real time using Docker.
-
----
-
-## 📁 Project Structure
-
-
-grafana-prometheus/
-├── prometheus.yml # Prometheus configuration file
-└── README.md # Project documentation
-
+This project demonstrates how to build a containerized monitoring stack using **Prometheus**, **Grafana**, and **Node Exporter** to monitor infrastructure metrics in real-time. It's an essential part of a DevOps Engineer's toolkit and fits perfectly in a professional GitHub portfolio.
 
 ---
 
-## 🐳 Docker-Based Monitoring Stack
+## 📌 Project Objectives
 
-> All containers are connected using a shared Docker network.
+- Set up a **Dockerized monitoring stack** using Prometheus + Grafana + Node Exporter.
+- View real-time metrics like CPU, memory, and disk usage of the host system.
+- Visualize metrics beautifully using Grafana dashboards.
+- Learn how these tools integrate in modern DevOps pipelines.
 
-### 🔹 1. Create a Docker Network
+---
+
+## 📁 Folder Structure
+
+
+devops-portfolio-deployment/
+│
+├── monitoring/
+│ ├── docker-compose.yml
+│ ├── prometheus/
+│ │ └── prometheus.yml
+│ ├── grafana/
+│ │ └── provisioning/
+│ │ └── datasources/
+│ │ └── datasource.yml
+│ └── screenshots/
+│ ├── prometheus-targets.png
+│ ├── grafana-dashboard.png
+│ ├── docker-containers.png
+│ └── cloudwatch-metrics.png (optional)
+│
+└── README.md
+
+
+---
+
+## 🚀 Tech Stack Used
+
+| Tool         | Purpose                          |
+|--------------|----------------------------------|
+| Docker       | Containerization                 |
+| Prometheus   | Metrics collection               |
+| Grafana      | Metrics visualization            |
+| Node Exporter| Host machine metric exporter     |
+| Git & GitHub | Version control & project hosting|
+
+---
+
+## ⚙️ How to Run the Monitoring Stack
 
 ```bash
-docker network create monitoring-net
+# Go to project directory
+cd devops-portfolio-deployment/monitoring
 
-docker run -d --name prometheus \
-  --network monitoring-net \
-  -p 9090:9090 \
-  -v ${PWD}/prometheus.yml:/etc/prometheus/prometheus.yml \
-  prom/prometheus
+# Start all services (Prometheus, Grafana, Node Exporter)
+docker-compose up -d
 
-docker run -d --name grafana \
-  --network monitoring-net \
-  -p 3000:3000 \
-  grafana/grafana
+✅ Services will be running on:
 
-docker run -d --name node-exporter \
-  --network monitoring-net \
-  -p 9100:9100 \
-  prom/node-exporter
+Prometheus: http://localhost:9090
 
-## 📸 Screenshots
+Grafana: http://localhost:3000
 
-### ✅ Prometheus Targets Page
-> Showing successful scraping of Node Exporter  
-![Prometheus Targets](./screenshots/Promethious.jpg)
+Node Exporter: http://localhost:9100
 
-### ✅ Grafana Node Exporter Dashboard
-> Pre-built Dashboard ID 1860 with system metrics  
-![Grafana Dashboard](./screenshots/grafana-dashboard.jpg)
 
-### ✅ Docker Containers Running
-> All 3 containers: Prometheus, Grafana, Node Exporter  
-![Docker PS](./screenshots/docker ps.png.jpg)
 
-### ✅ (Optional) CloudWatch Metrics Preview
-> If you're using AWS monitoring in future  
-![CloudWatch](./screenshots/cloudwatch-metrics.png)
+🔐 Grafana Login
+Username: admin
+
+Password: admin
+
+Change the password after first login.
+
+
+📊 Load Grafana Dashboard
+Login to Grafana http://localhost:3000
+
+Go to Dashboard > Import
+
+Enter ID 1860 (Node Exporter Full)
+
+Select Prometheus data source
+
+Click Import
+
+## ✨ What You Learned
+
+- Containerized monitoring setup  
+- Real-time metrics with Prometheus  
+- Grafana dashboard import and customization  
+- Infrastructure observability using Node Exporter  
+- Docker networking and service orchestration  
+
+
+✅ GitHub Repository
+📍 GitHub Project Link
+
+https://github.com/Hina-Atif/devops-portfolio-deployment
+
+
+👩‍💻 Author
+Hina Atif — Cloud | DevOps | AWS
+🌐 LinkedIn
+
+
+
