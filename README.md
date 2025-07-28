@@ -39,3 +39,20 @@ docker run -d --name node-exporter \
   -p 9100:9100 \
   prom/node-exporter
 
+## 📸 Screenshots
+
+### ✅ Prometheus Targets Page
+> Showing successful scraping of Node Exporter  
+![Prometheus Targets](./screenshots/Promethious.jpg)
+
+### ✅ Grafana Node Exporter Dashboard
+> Pre-built Dashboard ID 1860 with system metrics  
+![Grafana Dashboard](./screenshots/grafana-dashboard.jpg)
+
+### ✅ Docker Containers Running
+> All 3 containers: Prometheus, Grafana, Node Exporter  
+![Docker PS](./screenshots/docker ps.png.jpg)
+
+### ✅ (Optional) CloudWatch Metrics Preview
+> If you're using AWS monitoring in future  
+![CloudWatch](./screenshots/cloudwatch-metrics.png)
