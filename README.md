@@ -1,81 +1,41 @@
-# 🚀 Hina Atif - DevOps Portfolio Deployment
+# 📊 Monitoring Infrastructure with Prometheus & Grafana
 
-![CI/CD](https://github.com/Hina-Atif/devops-portfolio-deployment/actions/workflows/deploy.yml/badge.svg)
-
-
-Welcome to the professional DevOps Portfolio Website of **Hina Atif**.  
-This project showcases automation, CI/CD, cloud hosting, and best practices using **AWS + GitHub Actions**.
+This project demonstrates how to set up a containerized monitoring stack using **Prometheus**, **Grafana**, and **Node Exporter** to monitor system-level metrics in real time using Docker.
 
 ---
 
-## 👩‍💻 About Me
-
-Hi, I'm **Hina Atif**, an aspiring DevOps & Cloud Engineer with hands-on skills in:
+## 📁 Project Structure
 
 
-- 🚀 AWS S3, EC2, IAM
-- 🔄 CI/CD with GitHub Actions
-- 🐳 Docker & Linux
-- 📊 Monitoring with Prometheus & Grafana
-- 🧠 Automation, scripting, infrastructure as code (IaC)
+grafana-prometheus/
+├── prometheus.yml # Prometheus configuration file
+└── README.md # Project documentation
+
 
 ---
 
-## 📁 Project Overview
+## 🐳 Docker-Based Monitoring Stack
 
-| Feature               | Description                                     |
-|----------------------|-------------------------------------------------|
-| 🌐 Static Website     | HTML, CSS, JS portfolio                        |
-| ☁️ Hosted on AWS S3   | Publicly accessible S3 bucket                   |
-| 🔄 CI/CD Pipeline     | GitHub Actions auto-deploy on every push        |
-| 🔐 IAM & Secrets Mgmt | AWS credentials secured in GitHub Secrets       |
-| 💼 Professional Touch | LinkedIn-ready, recruiter-friendly structure    |
+> All containers are connected using a shared Docker network.
 
----
+### 🔹 1. Create a Docker Network
 
-## 📂 Tech Stack
+```bash
+docker network create monitoring-net
 
-- Git & GitHub  
-- GitHub Actions  
-- AWS S3 (Static Hosting)  
-- IAM User & Access Keys  
-- HTML, CSS, JavaScript
+docker run -d --name prometheus \
+  --network monitoring-net \
+  -p 9090:9090 \
+  -v ${PWD}/prometheus.yml:/etc/prometheus/prometheus.yml \
+  prom/prometheus
 
----
+docker run -d --name grafana \
+  --network monitoring-net \
+  -p 3000:3000 \
+  grafana/grafana
 
-## 🌐 Live Website
+docker run -d --name node-exporter \
+  --network monitoring-net \
+  -p 9100:9100 \
+  prom/node-exporter
 
-**(Link will appear after first deployment)**  
-Example: `http://hina-atif-portfolio.s3-website-us-east-1.amazonaws.com`
-
----
-
-## 🔧 How It Works (Behind the Scenes)
-
-1. Code is pushed to `main` branch
-2. GitHub Actions runs the deploy workflow
-3. Files sync to S3 via `aws s3 sync`
-4. Website is updated live 🎉
-
----
-
-## 📸 Screenshots to Add
-
-- ✅ AWS S3 bucket config  
-- ✅ GitHub Actions log  
-- ✅ Deployed website  
-- ✅ CI/CD badge (optional)
-
----
-
-## 🔗 Links
-
-- 🧑‍💻 GitHub: [github.com/Hina-Atif](https://github.com/Hina-Atif)
-- 💼 LinkedIn: [linkedin.com/in/hina-atif-devopsengineer](https://www.linkedin.com/in/hina-atif-devopsengineer)
-- 📧 Email: [hinaatif355@gmail.com](mailto:hinaatif355@gmail.com)
-
----
-
-## 📖 License
-
-MIT License. Free to use and customize ✨
