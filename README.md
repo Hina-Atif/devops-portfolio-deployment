@@ -78,6 +78,7 @@ DevOps & Cloud Engineer Intern
 🎯 Project completed and published for portfolio & resume use.
 
 
+📄 [View My Resume](./Hina_Atif_DevOps_Resume.pdf)
 
 
 
