@@ -1,110 +1,91 @@
-# Monitoring Infrastructure with Prometheus & Grafana
+# 🌐 Cloud-Based Web Application Deployment with CI/CD
 
-This project demonstrates how to build a containerized monitoring stack using **Prometheus**, **Grafana**, and **Node Exporter** to monitor infrastructure metrics in real-time. It's an essential part of a DevOps Engineer's toolkit and fits perfectly in a professional GitHub portfolio.
-
----
-
-## 📌 Project Objectives
-
-- Set up a **Dockerized monitoring stack** using Prometheus + Grafana + Node Exporter.
-- View real-time metrics like CPU, memory, and disk usage of the host system.
-- Visualize metrics beautifully using Grafana dashboards.
-- Learn how these tools integrate in modern DevOps pipelines.
+This project showcases the deployment of a static web application on AWS using DevOps best practices. It includes infrastructure provisioning, CI/CD automation, containerization, and monitoring.
 
 ---
 
-## 📁 Folder Structure
+## 🚀 Tech Stack & Tools
 
+- **Cloud**: AWS EC2, S3, VPC, Route 53
+- **IaC**: Terraform
+- **CI/CD**: Jenkins, GitHub
+- **Containerization**: Docker
+- **Monitoring**: Prometheus, Grafana
+
+---
+
+## 📁 Project Structure
 
 devops-portfolio-deployment/
 │
-├── monitoring/
-│ ├── docker-compose.yml
-│ ├── prometheus/
-│ │ └── prometheus.yml
-│ ├── grafana/
-│ │ └── provisioning/
-│ │ └── datasources/
-│ │ └── datasource.yml
-│ └── screenshots/
-│ ├── prometheus-targets.png
-│ ├── grafana-dashboard.png
-│ ├── docker-containers.png
-│ └── cloudwatch-metrics.png (optional)
-│
-└── README.md
+├── infrastructure/ # Terraform files for AWS resources
+├── monitoring/ # Prometheus and Grafana setup
+├── scripts/ # Shell scripts (e.g., deploy.sh)
+├── src/ # Static website files (HTML, CSS)
+├── Dockerfile # Container configuration
+├── Jenkinsfile # CI/CD pipeline configuration
+└── README.md # Project documentation
+
+yaml
+Copy
+Edit
 
 
 ---
 
-## 🚀 Tech Stack Used
+## 🔧 Key Features
 
-| Tool         | Purpose                          |
-|--------------|----------------------------------|
-| Docker       | Containerization                 |
-| Prometheus   | Metrics collection               |
-| Grafana      | Metrics visualization            |
-| Node Exporter| Host machine metric exporter     |
-| Git & GitHub | Version control & project hosting|
+- Automated AWS infrastructure setup using Terraform
+- Static site hosted on EC2 with S3 backup
+- Docker containerization for consistent environments
+- Jenkins pipeline for continuous deployment from GitHub
+- Monitoring with Prometheus (metrics) and Grafana (dashboards)
 
 ---
 
-## ⚙️ How to Run the Monitoring Stack
+## 📸 Screenshots
 
-```bash
-# Go to project directory
-cd devops-portfolio-deployment/monitoring
+> ✅ Upload these after setup:
+- AWS EC2 instance
+- Jenkins pipeline success
+- Terraform `plan` output
+- Prometheus metrics
+- Grafana dashboard
 
-# Start all services (Prometheus, Grafana, Node Exporter)
-docker-compose up -d
+---
 
-✅ Services will be running on:
+## 👩‍💻 Author
 
-Prometheus: http://localhost:9090
+**Hina Atif**  
+DevOps & Cloud Engineer Intern  
+[GitHub Portfolio](https://github.com/Hina-Atif)
 
-Grafana: http://localhost:3000
+---
 
-Node Exporter: http://localhost:9100
+## 📌 Resume Bullet (for reference)
 
+> Deployed a static web application on AWS using EC2, S3, and Terraform. Set up Docker containers and implemented CI/CD with Jenkins and GitHub. Integrated monitoring with Prometheus and Grafana.
 
+---
 
-🔐 Grafana Login
-Username: admin
+## ✅ Status
 
-Password: admin
-
-Change the password after first login.
-
-
-📊 Load Grafana Dashboard
-Login to Grafana http://localhost:3000
-
-Go to Dashboard > Import
-
-Enter ID 1860 (Node Exporter Full)
-
-Select Prometheus data source
-
-Click Import
-
-## ✨ What You Learned
-
-- Containerized monitoring setup  
-- Real-time metrics with Prometheus  
-- Grafana dashboard import and customization  
-- Infrastructure observability using Node Exporter  
-- Docker networking and service orchestration  
+🎯 Project completed and published for portfolio & resume use.
 
 
-✅ GitHub Repository
-📍 GitHub Project Link
-
-https://github.com/Hina-Atif/devops-portfolio-deployment
 
 
-👩‍💻 Author
-Hina Atif — Cloud | DevOps | AWS
-🌐 LinkedIn
+
+
+
+
+
+
+
+
+
+
+
 
 
 
