@@ -52,6 +52,11 @@ Edit
 - Prometheus metrics
 - Grafana dashboard
 
+## 🔧 Terraform Plan Output
+
+![Terraform Plan Output](assets/screenshots/image.png)
+
+
 ---
 
 ## 👩‍💻 Author
