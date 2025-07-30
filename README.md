@@ -37,6 +37,11 @@ http://54.175.48.112
 ✅ EC2 Instance Hosted Site
 
 
+
+## 🔧 Terraform Plan Output
+![Terraform Plan Output](screenshots/image.png)
+
+
 📁 Project Structure
 devops-portfolio-deployment/
 │
@@ -45,9 +50,6 @@ devops-portfolio-deployment/
 ├── README.md
 ├── screenshots/
 │   └── EC2-hosted.png.jpg
-
-✅ Terraform Plan Output
-![Terraform Plan Output](screenshots/image.png)
 
 
 🙋‍♀️ Author
@@ -61,6 +63,9 @@ GitHub: github.com/Hina-Atif
 
 
  
+
+
+
 
 
 
