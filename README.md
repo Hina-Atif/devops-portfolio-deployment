@@ -35,6 +35,8 @@ http://54.175.48.112
 
 📸 Screenshots
 ✅ EC2 Instance Hosted Site
+![Terraform Plan Output](screenshots/image.png)
+
 
 📁 Project Structure
 devops-portfolio-deployment/
