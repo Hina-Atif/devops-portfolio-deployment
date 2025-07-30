@@ -14,6 +14,9 @@ This project showcases the deployment of a static web application on AWS using D
 
 ---
 
+🔗 **Live Website:** [http://54.175.48.112](http://54.175.48.112)
+
+
 ## 📁 Project Structure
 
 devops-portfolio-deployment/
@@ -50,7 +53,8 @@ Edit
 - Jenkins pipeline success
 - Terraform `plan` output
 - Prometheus metrics
-- Grafana dashboard
+- Grafana dashboard 
+- EC2-hosted.png.jpg
 
 ## 🔧 Terraform Plan Output
 
