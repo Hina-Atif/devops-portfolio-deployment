@@ -52,14 +52,29 @@ devops-portfolio-deployment/
 │   └── EC2-hosted.png.jpg
 
 
-🙋‍♀️ Author
-Name: Hina Atif
+## ✅ Status
 
+🎯 Project completed and published for portfolio & resume use.
+
+📄 [View My Resume](./Hina_Atif_DevOps_Resume.pdf)
+
+---
+
+
+
+## 📌 Resume Bullet (for reference)
+
+> Deployed a static web application on AWS using EC2, S3, and Terraform. Set up Docker containers and implemented CI/CD with Jenkins and GitHub. Integrated monitoring with Prometheus and Grafana.
+
+---
+
+## 👩‍💻 Author
+
+**Hina Atif**  
 Role: Aspiring DevOps Engineer
+[GitHub Portfolio](https://github.com/Hina-Atif)
 
-LinkedIn: linkedin.com/in/hina-atif
 
-GitHub: github.com/Hina-Atif
 
 
  
